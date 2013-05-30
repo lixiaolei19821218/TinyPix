@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4F0C25117530C2A000FCB5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F0C25017530C2A000FCB5A /* UIKit.framework */; };
+		A4F0C25317530C2A000FCB5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F0C25217530C2A000FCB5A /* Foundation.framework */; };
+		A4F0C25517530C2A000FCB5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F0C25417530C2A000FCB5A /* CoreGraphics.framework */; };
+		A4F0C25B17530C2A000FCB5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4F0C25917530C2A000FCB5A /* InfoPlist.strings */; };
+		A4F0C25D17530C2A000FCB5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0C25C17530C2A000FCB5A /* main.m */; };
+		A4F0C26117530C2A000FCB5A /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0C26017530C2A000FCB5A /* BIDAppDelegate.m */; };
+		A4F0C26317530C2A000FCB5A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F0C26217530C2A000FCB5A /* Default.png */; };
+		A4F0C26517530C2A000FCB5A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F0C26417530C2A000FCB5A /* Default@2x.png */; };
+		A4F0C26717530C2A000FCB5A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F0C26617530C2A000FCB5A /* Default-568h@2x.png */; };
+		A4F0C26A17530C2A000FCB5A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F0C26817530C2A000FCB5A /* MainStoryboard.storyboard */; };
+		A4F0C26D17530C2A000FCB5A /* BIDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0C26C17530C2A000FCB5A /* BIDMasterViewController.m */; };
+		A4F0C27017530C2A000FCB5A /* BIDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0C26F17530C2A000FCB5A /* BIDDetailViewController.m */; };
+		A4F0C27817531F55000FCB5A /* BIDTinyPixDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0C27717531F55000FCB5A /* BIDTinyPixDocument.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4F0C24D17530C2A000FCB5A /* TinyPix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyPix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F0C25017530C2A000FCB5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4F0C25217530C2A000FCB5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4F0C25417530C2A000FCB5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4F0C25817530C2A000FCB5A /* TinyPix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TinyPix-Info.plist"; sourceTree = "<group>"; };
+		A4F0C25A17530C2A000FCB5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4F0C25C17530C2A000FCB5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4F0C25E17530C2A000FCB5A /* TinyPix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinyPix-Prefix.pch"; sourceTree = "<group>"; };
+		A4F0C25F17530C2A000FCB5A /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		A4F0C26017530C2A000FCB5A /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		A4F0C26217530C2A000FCB5A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A4F0C26417530C2A000FCB5A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A4F0C26617530C2A000FCB5A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A4F0C26917530C2A000FCB5A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A4F0C26B17530C2A000FCB5A /* BIDMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDMasterViewController.h; sourceTree = "<group>"; };
+		A4F0C26C17530C2A000FCB5A /* BIDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDMasterViewController.m; sourceTree = "<group>"; };
+		A4F0C26E17530C2A000FCB5A /* BIDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDDetailViewController.h; sourceTree = "<group>"; };
+		A4F0C26F17530C2A000FCB5A /* BIDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDDetailViewController.m; sourceTree = "<group>"; };
+		A4F0C27617531F55000FCB5A /* BIDTinyPixDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDTinyPixDocument.h; sourceTree = "<group>"; };
+		A4F0C27717531F55000FCB5A /* BIDTinyPixDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDTinyPixDocument.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4F0C24A17530C2A000FCB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F0C25117530C2A000FCB5A /* UIKit.framework in Frameworks */,
+				A4F0C25317530C2A000FCB5A /* Foundation.framework in Frameworks */,
+				A4F0C25517530C2A000FCB5A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4F0C24417530C2A000FCB5A = {
+			isa = PBXGroup;
+			children = (
+				A4F0C25617530C2A000FCB5A /* TinyPix */,
+				A4F0C24F17530C2A000FCB5A /* Frameworks */,
+				A4F0C24E17530C2A000FCB5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4F0C24E17530C2A000FCB5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4F0C24D17530C2A000FCB5A /* TinyPix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4F0C24F17530C2A000FCB5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4F0C25017530C2A000FCB5A /* UIKit.framework */,
+				A4F0C25217530C2A000FCB5A /* Foundation.framework */,
+				A4F0C25417530C2A000FCB5A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4F0C25617530C2A000FCB5A /* TinyPix */ = {
+			isa = PBXGroup;
+			children = (
+				A4F0C25F17530C2A000FCB5A /* BIDAppDelegate.h */,
+				A4F0C26017530C2A000FCB5A /* BIDAppDelegate.m */,
+				A4F0C26817530C2A000FCB5A /* MainStoryboard.storyboard */,
+				A4F0C27617531F55000FCB5A /* BIDTinyPixDocument.h */,
+				A4F0C27717531F55000FCB5A /* BIDTinyPixDocument.m */,
+				A4F0C26B17530C2A000FCB5A /* BIDMasterViewController.h */,
+				A4F0C26C17530C2A000FCB5A /* BIDMasterViewController.m */,
+				A4F0C26E17530C2A000FCB5A /* BIDDetailViewController.h */,
+				A4F0C26F17530C2A000FCB5A /* BIDDetailViewController.m */,
+				A4F0C25717530C2A000FCB5A /* Supporting Files */,
+			);
+			path = TinyPix;
+			sourceTree = "<group>";
+		};
+		A4F0C25717530C2A000FCB5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F0C25817530C2A000FCB5A /* TinyPix-Info.plist */,
+				A4F0C25917530C2A000FCB5A /* InfoPlist.strings */,
+				A4F0C25C17530C2A000FCB5A /* main.m */,
+				A4F0C25E17530C2A000FCB5A /* TinyPix-Prefix.pch */,
+				A4F0C26217530C2A000FCB5A /* Default.png */,
+				A4F0C26417530C2A000FCB5A /* Default@2x.png */,
+				A4F0C26617530C2A000FCB5A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4F0C24C17530C2A000FCB5A /* TinyPix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F0C27317530C2A000FCB5A /* Build configuration list for PBXNativeTarget "TinyPix" */;
+			buildPhases = (
+				A4F0C24917530C2A000FCB5A /* Sources */,
+				A4F0C24A17530C2A000FCB5A /* Frameworks */,
+				A4F0C24B17530C2A000FCB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyPix;
+			productName = TinyPix;
+			productReference = A4F0C24D17530C2A000FCB5A /* TinyPix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4F0C24517530C2A000FCB5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "李 潇磊";
+			};
+			buildConfigurationList = A4F0C24817530C2A000FCB5A /* Build configuration list for PBXProject "TinyPix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A4F0C24417530C2A000FCB5A;
+			productRefGroup = A4F0C24E17530C2A000FCB5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4F0C24C17530C2A000FCB5A /* TinyPix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4F0C24B17530C2A000FCB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F0C25B17530C2A000FCB5A /* InfoPlist.strings in Resources */,
+				A4F0C26317530C2A000FCB5A /* Default.png in Resources */,
+				A4F0C26517530C2A000FCB5A /* Default@2x.png in Resources */,
+				A4F0C26717530C2A000FCB5A /* Default-568h@2x.png in Resources */,
+				A4F0C26A17530C2A000FCB5A /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4F0C24917530C2A000FCB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F0C25D17530C2A000FCB5A /* main.m in Sources */,
+				A4F0C26117530C2A000FCB5A /* BIDAppDelegate.m in Sources */,
+				A4F0C26D17530C2A000FCB5A /* BIDMasterViewController.m in Sources */,
+				A4F0C27017530C2A000FCB5A /* BIDDetailViewController.m in Sources */,
+				A4F0C27817531F55000FCB5A /* BIDTinyPixDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4F0C25917530C2A000FCB5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4F0C25A17530C2A000FCB5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4F0C26817530C2A000FCB5A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4F0C26917530C2A000FCB5A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4F0C27117530C2A000FCB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4F0C27217530C2A000FCB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4F0C27417530C2A000FCB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinyPix/TinyPix-Prefix.pch";
+				INFOPLIST_FILE = "TinyPix/TinyPix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4F0C27517530C2A000FCB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinyPix/TinyPix-Prefix.pch";
+				INFOPLIST_FILE = "TinyPix/TinyPix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4F0C24817530C2A000FCB5A /* Build configuration list for PBXProject "TinyPix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F0C27117530C2A000FCB5A /* Debug */,
+				A4F0C27217530C2A000FCB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F0C27317530C2A000FCB5A /* Build configuration list for PBXNativeTarget "TinyPix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F0C27417530C2A000FCB5A /* Debug */,
+				A4F0C27517530C2A000FCB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4F0C24517530C2A000FCB5A /* Project object */;
+}
