@@ -87,4 +87,75 @@
     self.colorControl.selectedSegmentIndex = selectedColorIndex;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]
+                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                  target:self
+                                  action:@selector(insertNewObject)];
+    self.navigationItem.rightBarButtonItem = addButton;
+    [self reloadFiles];
+}
+
+- (void)insertNewObject {
+    // get the name
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:@"Filename"
+                               message:@"Enter a name for your new TinyPix document."
+                              delegate:self
+                     cancelButtonTitle:@"Cancel"
+                     otherButtonTitles:@"Create", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView
+didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        NSString *filename = [NSString stringWithFormat:@"%@.tinypix",
+                              [alertView textFieldAtIndex:0].text];
+        NSURL *saveUrl = [self urlForFilename:filename];
+        self.chosenDocument = [[BIDTinyPixDocument alloc] initWithFileURL:saveUrl];
+        [self.chosenDocument saveToURL:saveUrl
+                      forSaveOperation:UIDocumentSaveForCreating
+                        completionHandler:^(BOOL success) {
+                         if (success) {
+                             NSLog(@"save OK");
+                             [self reloadFiles];
+                             [self performSegueWithIdentifier:@"masterToDetail"
+                                                       sender:self];
+                         } else {
+                             NSLog(@"failed to save!");
+                         } }];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if (sender == self) {
+        // if sender == self, a new document has just been created,
+        // and chosenDocument is already set.
+        UIViewController *destination = segue.destinationViewController;
+        if ([destination respondsToSelector:@selector(setDetailItem:)]) {
+            [destination setValue:self.chosenDocument forKey:@"detailItem"];
+        }
+    } else {
+        // find the chosen document from the tableview
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *filename = self.documentFilenames[indexPath.row];
+        NSURL *docUrl = [self urlForFilename:filename];
+        self.chosenDocument = [[BIDTinyPixDocument alloc] initWithFileURL:docUrl];
+        [self.chosenDocument openWithCompletionHandler:^(BOOL success) {
+            if (success) {
+                NSLog(@"load OK");
+                UIViewController *destination = segue.destinationViewController;
+                if ([destination respondsToSelector:@selector(setDetailItem:)]) {
+                    [destination setValue:self.chosenDocument forKey:@"detailItem"];
+                }
+            } else {
+                NSLog(@"failed to load!");
+            } }];
+    }
+}
+
 @end

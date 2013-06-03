@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A468150A175C8CF000D04194 /* BIDTinyPixView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4681509175C8CF000D04194 /* BIDTinyPixView.m */; };
 		A4F0C25117530C2A000FCB5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F0C25017530C2A000FCB5A /* UIKit.framework */; };
 		A4F0C25317530C2A000FCB5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F0C25217530C2A000FCB5A /* Foundation.framework */; };
 		A4F0C25517530C2A000FCB5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F0C25417530C2A000FCB5A /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4681508175C8CF000D04194 /* BIDTinyPixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDTinyPixView.h; sourceTree = "<group>"; };
+		A4681509175C8CF000D04194 /* BIDTinyPixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDTinyPixView.m; sourceTree = "<group>"; };
 		A4F0C24D17530C2A000FCB5A /* TinyPix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyPix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F0C25017530C2A000FCB5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4F0C25217530C2A000FCB5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +102,8 @@
 				A4F0C26E17530C2A000FCB5A /* BIDDetailViewController.h */,
 				A4F0C26F17530C2A000FCB5A /* BIDDetailViewController.m */,
 				A4F0C25717530C2A000FCB5A /* Supporting Files */,
+				A4681508175C8CF000D04194 /* BIDTinyPixView.h */,
+				A4681509175C8CF000D04194 /* BIDTinyPixView.m */,
 			);
 			path = TinyPix;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				A4F0C26D17530C2A000FCB5A /* BIDMasterViewController.m in Sources */,
 				A4F0C27017530C2A000FCB5A /* BIDDetailViewController.m in Sources */,
 				A4F0C27817531F55000FCB5A /* BIDTinyPixDocument.m in Sources */,
+				A468150A175C8CF000D04194 /* BIDTinyPixView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
